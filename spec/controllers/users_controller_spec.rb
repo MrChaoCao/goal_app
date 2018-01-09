@@ -40,7 +40,7 @@ end
 
      context 'with valid params' do
        it 'redirects to the user show page' do
-         post :create, params: { user: {username: 'username', password: 'password'}}
+         post :create, params: { user: {username: 'username99', password: 'password'}}
          expect(response).to redirect_to(user_url(User.last))
        end
      end
